@@ -226,7 +226,8 @@ function drawEdges() {
       path.setAttribute('d', d);
       path.setAttribute('stroke', 'black');
       path.setAttribute('fill', 'none');
-      if (edge.toEnd === 'arrow') {
+      // Show arrows by default unless explicitly set to 'none'
+      if (edge.toEnd !== 'none') {
         path.setAttribute('marker-end', 'url(#arrowhead)');
       }
 
