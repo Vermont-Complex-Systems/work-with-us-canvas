@@ -1,0 +1,1 @@
+What if we can create a feedback loop between interactive data visualization and data collection, mutually reinforcing each other?

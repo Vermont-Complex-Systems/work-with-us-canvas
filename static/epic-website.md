@@ -1,0 +1,1 @@
+Sometimes a story don't cut it, a website gives a lot of freedom to tell a larger plot.
