@@ -214,13 +214,70 @@ function drawEdges() {
       const fromPoint = getAnchorPoint(fromNode, edge.fromSide);
       const toPoint = getAnchorPoint(toNode, edge.toSide);
 
-      const curveTightness = 0.75;
-      const controlPointX1 = fromPoint.x + (toPoint.x - fromPoint.x) * curveTightness;
-      const controlPointX2 = fromPoint.x + (toPoint.x - fromPoint.x) * (1 - curveTightness);
-      const controlPointY1 = fromPoint.y;
-      const controlPointY2 = toPoint.y;
+      // Shorten by half the stroke width (2px / 2 = 1px)
+      const arrowLength = 15;
+      const dx = toPoint.x - fromPoint.x;
+      const dy = toPoint.y - fromPoint.y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
 
-      const d = `M ${fromPoint.x} ${fromPoint.y} C ${controlPointX1} ${controlPointY1}, ${controlPointX2} ${controlPointY2}, ${toPoint.x} ${toPoint.y}`;
+      // Adjust toPoint to be slightly before the node edge
+      const adjustedToPoint = {
+        x: toPoint.x - (dx / distance) * arrowLength,
+        y: toPoint.y - (dy / distance) * arrowLength
+      };
+
+      // Calculate control points based on connection sides
+      const offset = Math.min(distance * 0.4, 100);
+
+      let controlPointX1, controlPointY1, controlPointX2, controlPointY2;
+
+      // First control point - extends from fromSide
+      switch (edge.fromSide) {
+        case 'right':
+          controlPointX1 = fromPoint.x + offset;
+          controlPointY1 = fromPoint.y;
+          break;
+        case 'left':
+          controlPointX1 = fromPoint.x - offset;
+          controlPointY1 = fromPoint.y;
+          break;
+        case 'bottom':
+          controlPointX1 = fromPoint.x;
+          controlPointY1 = fromPoint.y + offset;
+          break;
+        case 'top':
+          controlPointX1 = fromPoint.x;
+          controlPointY1 = fromPoint.y - offset;
+          break;
+        default:
+          controlPointX1 = fromPoint.x + offset;
+          controlPointY1 = fromPoint.y;
+      }
+
+      // Second control point - extends from toSide (use adjustedToPoint for proper curve)
+      switch (edge.toSide) {
+        case 'right':
+          controlPointX2 = adjustedToPoint.x + offset;
+          controlPointY2 = adjustedToPoint.y;
+          break;
+        case 'left':
+          controlPointX2 = adjustedToPoint.x - offset;
+          controlPointY2 = adjustedToPoint.y;
+          break;
+        case 'bottom':
+          controlPointX2 = adjustedToPoint.x;
+          controlPointY2 = adjustedToPoint.y + offset;
+          break;
+        case 'top':
+          controlPointX2 = adjustedToPoint.x;
+          controlPointY2 = adjustedToPoint.y - offset;
+          break;
+        default:
+          controlPointX2 = adjustedToPoint.x - offset;
+          controlPointY2 = adjustedToPoint.y;
+      }
+
+      const d = `M ${fromPoint.x} ${fromPoint.y} C ${controlPointX1} ${controlPointY1}, ${controlPointX2} ${controlPointY2}, ${adjustedToPoint.x} ${adjustedToPoint.y}`;
 
       const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       path.setAttribute('d', d);
@@ -232,6 +289,55 @@ function drawEdges() {
       }
 
       svgContainer.appendChild(path);
+
+      // Add label if present
+      if (edge.label) {
+        const midX = (fromPoint.x + toPoint.x) / 2;
+        const midY = (fromPoint.y + toPoint.y) / 2;
+
+        // Split label by newlines to support multi-line labels
+        const lines = edge.label.split('\n');
+        const lineHeight = 18;
+        const padding = 6;
+
+        // Create text element with tspan for each line
+        const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        text.setAttribute('x', midX);
+        text.setAttribute('y', midY);
+        text.setAttribute('class', 'edge-label');
+        text.setAttribute('text-anchor', 'middle');
+        text.setAttribute('dominant-baseline', 'central');
+
+        // Calculate max width for background rect
+        let maxWidth = 0;
+        lines.forEach((line, i) => {
+          const tspan = document.createElementNS('http://www.w3.org/2000/svg', 'tspan');
+          tspan.setAttribute('x', midX);
+          // Position lines relative to center
+          if (i === 0) {
+            tspan.setAttribute('dy', -(lines.length - 1) * lineHeight / 2);
+          } else {
+            tspan.setAttribute('dy', lineHeight);
+          }
+          tspan.textContent = line;
+          text.appendChild(tspan);
+          maxWidth = Math.max(maxWidth, line.length * 8);
+        });
+
+        const textHeight = lines.length * lineHeight;
+
+        // Add background rectangle for better readability
+        const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        rect.setAttribute('x', midX - maxWidth / 2 - padding);
+        rect.setAttribute('y', midY - textHeight / 2 - padding / 2);
+        rect.setAttribute('width', maxWidth + padding * 2);
+        rect.setAttribute('height', textHeight + padding);
+        rect.setAttribute('class', 'edge-label-bg');
+        rect.setAttribute('rx', '4');
+
+        svgContainer.appendChild(rect);
+        svgContainer.appendChild(text);
+      }
     }
   });
 }

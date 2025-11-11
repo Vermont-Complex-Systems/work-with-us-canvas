@@ -118,6 +118,18 @@ body {
 #arrowhead {
   fill: var(--color-ui-3);
 }
+.edge-label {
+  fill: var(--color-tx-1);
+  font-size: 14px;
+  font-family: var(--font-content);
+  font-weight: 500;
+  pointer-events: none;
+  user-select: none;
+}
+.edge-label-bg {
+  fill: var(--color-bg-2);
+  pointer-events: none;
+}
 .will-pan {
   cursor: grab;
 }
@@ -261,7 +273,8 @@ nav .link:hover {
 .node {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   position: absolute;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 .node.is-active {
   box-shadow:
@@ -313,7 +326,20 @@ nav .link:hover {
   user-drag: none;
 }
 .node-text-content {
-  padding: 12px 24px;
+  padding: 0 6px 0 24px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  flex: 1;
+}
+.node-text-content > *:first-child {
+  margin-top: 12px;
+}
+.node-text-content > *:last-child {
+  margin-bottom: 12px;
+  padding-right: 18px;
 }
 
 /* Canvas controls */

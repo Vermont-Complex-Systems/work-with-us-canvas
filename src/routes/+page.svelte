@@ -106,10 +106,10 @@
 
 <div id="container">
 	<div id="canvas-container">
-		<svg id="canvas-edges">
+		<svg id="canvas-edges" preserveAspectRatio="none">
 			<defs>
-				<marker id="arrowhead" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
-					<polygon points="0 0, 10 4, 0 8" fill="currentColor"/>
+				<marker id="arrowhead" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+					<path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/>
 				</marker>
 			</defs>
 			<g id="edge-paths"></g>
@@ -195,13 +195,28 @@
 	:global(.node-text-content) {
 		overflow-y: auto;
 		overflow-x: hidden;
-		padding: 1rem;
-		height: calc(100% - 30px);
+		padding: 0 0.5rem 0 1rem;
+		height: 100%;
 		box-sizing: border-box;
+		position: relative;
+	}
+
+	:global(.node-text-content > *:first-child) {
+		margin-top: 1rem;
+	}
+
+	:global(.node-text-content > *:last-child) {
+		margin-bottom: 1rem;
 	}
 
 	:global(.node) {
 		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+	}
+
+	:global(.node-text) {
+		overflow: visible;
 	}
 
 	:global(#canvas-edges path) {
