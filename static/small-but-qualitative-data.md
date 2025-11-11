@@ -1,0 +1,1 @@
+Hand curated, domain-driven kind of data.
