@@ -1,0 +1,19 @@
+{
+	"nodes":[
+		{"id":"5b54af32a744735c","type":"text","text":"####  Data size\n\nHow big is big? Once upon a time, 100Gb was a lot. Now we don't need large infrastructure to handle such workflow, given the right computational skillsets.","x":-160,"y":-200,"width":311,"height":219},
+		{"id":"26b4068651682368","type":"text","text":"#### Data shareability\n\nClosed data is harder to share than public data; almost by definition.\n\nBut there can be agreements about what can be shared.","x":919,"y":-146,"width":341,"height":246},
+		{"id":"e8c99019e0ba0a0e","type":"text","text":"#### Data interoperability\n\nHow easy it is to to JOIN across disjoint datasets; e.g. informing babynames analysis with wikipedia patterns.","x":819,"y":202,"width":272,"height":195},
+		{"id":"519e00555438c6ba","type":"text","text":"Buzzwords\n- disparate data sources\n- data types\n- thickness of data (stories versus ngrams)\n- big data; swamped by massive datasets. \n- raw data\n- maintaining datasets\n- data pipelines\n- structured data\n- (robust) data platform\n- data-driven research\n- survey data; people provide annotated datasets.\n- open data","x":-700,"y":-379,"width":420,"height":542},
+		{"id":"349dc45dfd7ed587","type":"text","text":"#### Data openess\n\nPrivacy concerns; the data might be proprietary, meaning stakeholders don't want it to make it public.\n","x":644,"y":-540,"width":275,"height":220},
+		{"id":"2b62512779f46f33","type":"text","text":"#### Data auditability\n\nPossible to test the result of every task, where the test is often done in a different computer language and by a different analyst.\n\n#### Refs\n\n- [Patrick Ball](https://youtu.be/ZSunU9GQdcI?si=YO9BeAt-KbbXvqzq&t=196)\n\n#### See also\n\n- Full schema evolution, schema-level time travel and rollback: in [ducklake](https://ducklake.select/manifesto/).","x":253,"y":-540,"width":267,"height":220},
+		{"id":"dc4ae119a7ff6efc","type":"text","text":"#### Data  refresh rate\n\nAt what rate is the data coming in? Real time?  Daily? Montly? Quaterly? Yearly?\n","x":119,"y":397,"width":268,"height":183},
+		{"id":"c46550b922e23dc6","type":"text","text":"#### Data mutation\n\nDoes the data is being mutated by the core teams alot? \n- How often are schemas is changing? Or the values are being manually edited.\n","x":520,"y":440,"width":268,"height":183}
+	],
+	"edges":[
+		{"id":"09b3187d1d76e774","fromNode":"349dc45dfd7ed587","fromSide":"bottom","toNode":"26b4068651682368","toSide":"left","label":"affects"},
+		{"id":"b4a4d4d71f6b67cc","fromNode":"5b54af32a744735c","fromSide":"top","toNode":"2b62512779f46f33","toSide":"left","label":"Big data requiring compute\nmake it hard to \nbe auditable"},
+		{"id":"82beaba45a5511c6","fromNode":"5b54af32a744735c","fromSide":"right","toNode":"26b4068651682368","toSide":"left","label":"Big data is harder\nto share, obviously"},
+		{"id":"35316fe72cf81553","fromNode":"5b54af32a744735c","fromSide":"right","toNode":"e8c99019e0ba0a0e","toSide":"left","label":"large datasets \nare harder to\ntest for interoperability"},
+		{"id":"6b270783666eae51","fromNode":"dc4ae119a7ff6efc","fromSide":"left","toNode":"5b54af32a744735c","toSide":"bottom","label":"high-throughput"}
+	]
+}

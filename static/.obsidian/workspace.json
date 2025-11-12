@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "main.canvas",
+                "file": "data.canvas",
                 "viewState": {
-                  "x": 1716.5448489670541,
-                  "y": -960.9381198183256,
-                  "zoom": -0.3718488729623627
+                  "x": 221.08321537406417,
+                  "y": 30.13613759969689,
+                  "zoom": -0.8753071812788646
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "main"
+              "title": "data"
             }
           }
         ]
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "d9339bc59632ba09",
@@ -171,6 +172,10 @@
   },
   "active": "4848e59ff2bf38df",
   "lastOpenFiles": [
+    "main.canvas",
+    "data.canvas",
+    "data.md",
+    "complex-systems.md",
     "participatory-surveys.md",
     "epic-website.md",
     "interactive-press-releases.md",

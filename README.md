@@ -8,3 +8,4 @@ This is a canvas of our offerings at the VCSI. We are specializing with working 
 4. [Epic websites](/static/epic-websites.md)
 5. [Team data annotations](/static/team-data-annotations.md)
 6. [Participatory surveys](/static/participatory-data-survey.md)
+7. [Complex Systems Theory](/static/complex-systems.md)

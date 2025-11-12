@@ -1,8 +1,10 @@
 <script>
 	import { onMount, tick } from 'svelte';
 	import { base } from '$app/paths';
+	import { page } from '$app/stores';
 	import Markdown from 'svelte-exmarkdown';
 	import { gfmPlugin } from 'svelte-exmarkdown/gfm';
+	import { canvases } from '$lib/canvases.js';
 	import '$lib/canvas.css';
 
 	const plugins = [gfmPlugin()];
@@ -10,6 +12,9 @@
 	let canvasData = $state(null);
 	let error = $state(null);
 	let fileContents = $state({});
+
+	// Get canvas info from page data
+	const { data } = $derived($page);
 
 	// Helper to load scripts dynamically
 	function loadScript(src) {
@@ -22,25 +27,15 @@
 		});
 	}
 
-	onMount(async () => {
-		// Set body ID and styles for canvas.js
-		document.body.id = 'home';
-		document.body.style.setProperty('--scale', '1');
-		document.body.style.setProperty('--pan-x', '0px');
-		document.body.style.setProperty('--pan-y', '0px');
+	// Track if scripts are loaded
+	let scriptsLoaded = false;
 
+	async function loadCanvas(canvasFile) {
 		try {
-			// Get canvas name from URL hash or query parameter, default to 'main.canvas'
-			// Supports both /#canvas-name and ?canvas=canvas-name
-			let canvasFile = window.location.hash.slice(1); // Remove the #
-			if (!canvasFile) {
-				const urlParams = new URLSearchParams(window.location.search);
-				canvasFile = urlParams.get('canvas') || 'main.canvas';
-			}
-			// Add .canvas extension if not present
-			if (!canvasFile.endsWith('.canvas')) {
-				canvasFile += '.canvas';
-			}
+			// Reset state
+			canvasData = null;
+			fileContents = {};
+			error = null;
 
 			// Files in static/ are served at root
 			const response = await fetch(`${base}/${canvasFile}`);
@@ -76,9 +71,12 @@
 			// Store edges globally BEFORE loading canvas.js
 			window.edges = canvasData.edges || [];
 
-			// Load scripts after DOM is ready
-			await loadScript(`${base}/prism.js`);
-			await loadScript(`${base}/canvas.js`);
+			// Load scripts only once
+			if (!scriptsLoaded) {
+				await loadScript(`${base}/prism.js`);
+				await loadScript(`${base}/canvas.js`);
+				scriptsLoaded = true;
+			}
 
 			// Wait a bit for canvas.js to initialize
 			await new Promise(resolve => setTimeout(resolve, 100));
@@ -109,12 +107,39 @@
 			error = e.message;
 			console.error('Error loading canvas:', e);
 		}
+	}
+
+	onMount(() => {
+		// Set body ID and styles for canvas.js
+		document.body.id = 'home';
+		document.body.style.setProperty('--scale', '1');
+		document.body.style.setProperty('--pan-x', '0px');
+		document.body.style.setProperty('--pan-y', '0px');
+	});
+
+	// Load canvas whenever the data changes
+	$effect(() => {
+		if (data.canvasFile) {
+			loadCanvas(data.canvasFile);
+		}
 	});
 </script>
 
 <svelte:head>
-	<title>JSON Canvas Viewer</title>
+	<title>{data.canvasTitle} - JSON Canvas Viewer</title>
 </svelte:head>
+
+<nav id="canvas-nav">
+	{#each canvases as canvas}
+		<a
+			href="{base}/{canvas.name}"
+			class="canvas-link"
+			class:active={data.canvasName === canvas.name}
+		>
+			{canvas.title}
+		</a>
+	{/each}
+</nav>
 
 <div id="container">
 	<div id="canvas-container">
@@ -239,5 +264,37 @@
 
 	:global(#arrowhead polygon) {
 		fill: var(--color-ui-3, #5E0641);
+	}
+
+	#canvas-nav {
+		position: fixed;
+		top: 1rem;
+		left: 1rem;
+		z-index: 200;
+		display: flex;
+		gap: 0.5rem;
+		background: var(--color-bg-1);
+		border: 1px solid var(--color-ui-1);
+		border-radius: 8px;
+		padding: 0.5rem;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	}
+
+	.canvas-link {
+		padding: 0.5rem 1rem;
+		text-decoration: none;
+		color: var(--color-tx-1);
+		border-radius: 6px;
+		font-weight: 500;
+		transition: all 150ms;
+	}
+
+	.canvas-link:hover {
+		background: var(--color-bg-2);
+	}
+
+	.canvas-link.active {
+		background: var(--color-ui-3);
+		color: var(--color-bg-1);
 	}
 </style>
