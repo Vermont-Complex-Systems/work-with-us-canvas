@@ -18,6 +18,13 @@
 		"vite": "^7.1.10"
 	},
 	"dependencies": {
+		"highlight.js": "^11.11.1",
+		"katex": "^0.16.25",
+		"rehype-highlight": "^7.0.2",
+		"rehype-highlight-code-lines": "^1.2.1",
+		"rehype-katex": "^7.0.1",
+		"rehype-raw": "^7.0.0",
+		"remark-math": "^6.0.0",
 		"svelte-exmarkdown": "^5.0.2"
 	}
 }

@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "d9339bc59632ba09",
@@ -170,10 +169,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "4848e59ff2bf38df",
+  "active": "ac8991a7a5714860",
   "lastOpenFiles": [
-    "main.canvas",
     "data.canvas",
+    "main.canvas",
     "data.md",
     "complex-systems.md",
     "participatory-surveys.md",

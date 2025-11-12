@@ -6,8 +6,53 @@
 	import { gfmPlugin } from 'svelte-exmarkdown/gfm';
 	import { canvases } from '$lib/canvases.js';
 	import '$lib/canvas.css';
+	import 'katex/dist/katex.min.css';
+	import 'highlight.js/styles/github.css';
+	import rehypeKatex from 'rehype-katex';
+	import remarkMath from 'remark-math';
+	import rehypeRaw from 'rehype-raw';
+	import rehypeHighlight from 'rehype-highlight';
+	import rehypeHighlightCodeLines from 'rehype-highlight-code-lines';
 
-	const plugins = [gfmPlugin()];
+	// Import specific languages
+	import javascript from 'highlight.js/lib/languages/javascript';
+	import typescript from 'highlight.js/lib/languages/typescript';
+	import css from 'highlight.js/lib/languages/css';
+	import xml from 'highlight.js/lib/languages/xml';
+	import python from 'highlight.js/lib/languages/python';
+
+	const plugins = [
+		gfmPlugin(),
+		{
+			remarkPlugin: [remarkMath],
+			rehypePlugin: [rehypeKatex]
+		},
+		{
+			rehypePlugin: [rehypeRaw]
+		},
+		{
+			rehypePlugin: [
+				rehypeHighlight,
+				{
+					ignoreMissing: true,
+					languages: {
+						javascript,
+						python,
+						js: javascript,
+						typescript,
+						ts: typescript,
+						css,
+						html: xml,
+						xml,
+						svelte: xml
+					}
+				}
+			]
+		},
+		{
+			rehypePlugin: [rehypeHighlightCodeLines]
+		}
+	];
 
 	let canvasData = $state(null);
 	let error = $state(null);
