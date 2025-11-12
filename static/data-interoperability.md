@@ -1,0 +1,1 @@
+How easy it is to to JOIN across disjoint datasets; e.g. informing babynames analysis with wikipedia patterns.

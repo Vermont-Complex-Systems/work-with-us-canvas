@@ -1,0 +1,1 @@
+Complex systems theory describe emergent patterns across disciplines through mathematical and staticsial modeling.

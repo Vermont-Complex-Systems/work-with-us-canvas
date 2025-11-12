@@ -15,7 +15,7 @@ A SvelteKit template for hosting interactive [JSON Canvas](https://jsoncanvas.or
 
 ### 1. Create Your Repository
 
-Click the **"Use this template"** button at the top of this repository to create your own copy.
+Click the **"Use this template"** button at the top of this repository to create your own copy. If you want to stay updated with the repo, you'll need to fork it.
 
 ### 2. Clone and Install
 
@@ -39,3 +39,8 @@ npm install
 
 1. Click on `Settings/Pages`
 2. Make sure it is using Github action for deployment.
+
+## FAQ
+
+- Q:Why is my markdown not working?
+- A: Only _converted files_ in vault are currently rendered as markdown.

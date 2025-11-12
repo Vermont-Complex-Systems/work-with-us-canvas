@@ -1,0 +1,13 @@
+Buzzwords
+- disparate data sources
+- data types
+- thickness of data (stories versus ngrams)
+- big data; swamped by massive datasets. 
+- raw data
+- maintaining datasets
+- data pipelines
+- structured data
+- (robust) data platform
+- data-driven research
+- survey data; people provide annotated datasets.
+- open data

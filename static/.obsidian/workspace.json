@@ -11,14 +11,17 @@
             "id": "0f6e29742202f5b9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "getting-started.md",
-                "mode": "source",
-                "source": false
+                "file": "main.canvas",
+                "viewState": {
+                  "x": 1824.5,
+                  "y": -754,
+                  "zoom": -1.3838699603513347
+                }
               },
-              "icon": "lucide-file",
-              "title": "getting-started"
+              "icon": "lucide-layout-dashboard",
+              "title": "main"
             }
           }
         ]
@@ -172,16 +175,33 @@
   "active": "0f6e29742202f5b9",
   "lastOpenFiles": [
     "welcome.md",
-    "getting-started.md",
+    "open-data 1.md",
+    "data.canvas",
+    "data-auditability.md",
+    "data-shareability.md",
+    "data-interoperability.md",
+    "data-mutation.md",
+    "data-refresh-rate.md",
+    "big-data.md",
+    "data-overview.md",
     "second.canvas",
-    "advanced.md",
     "main.canvas",
-    "canvas.js.tmp.34235.1762896218093",
-    "small-but-qualitative-data.md",
-    "big-observational-data.md",
-    "survey-data.md",
+    "open-data.md",
+    "getting-started.md",
     "team-data-annotations.md",
+    "survey-data.md",
     "solo-annotations.md",
-    "annotated-data.md"
+    "small-but-qualitative-data.md",
+    "scraped-data.md",
+    "participatory-surveys.md",
+    "managing-data-pipelines.md",
+    "interactive-press-releases.md",
+    "epic-website.md",
+    "dataviz-sensitive-data.md",
+    "data-dumps.md",
+    "complex-systems.md",
+    "big-observational-data.md",
+    "annotated-data.md",
+    "canvas.js.tmp.34235.1762896218093"
   ]
 }
