@@ -127,7 +127,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ee486154ca9ef613",
@@ -220,15 +221,16 @@
   },
   "active": "e8b6311b63eed412",
   "lastOpenFiles": [
-    "advanced.md",
+    "templates/project-motivations.md",
     "storywrangler-ecosystems.canvas",
+    "templates",
+    "advanced.md",
     "storywrangler-tools",
     "storywrangler-tools/Ousiometer.md",
     "storywrangler-tools/Archetypometrics.md",
     "storywrangler-tools/Panometer.md",
     "storywrangler-tools/Allotaxonometer.md",
     "storywrangler-tools/Hedonometer.md",
-    "Untitled.md",
     "Submitting data pipelines.md",
     "getting-started.md",
     "data.canvas",
@@ -250,7 +252,6 @@
     "open-data.md",
     "team-data-annotations.md",
     "survey-data.md",
-    "solo-annotations.md",
     "canvas.js.tmp.34235.1762896218093"
   ]
 }

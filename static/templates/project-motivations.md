@@ -1,5 +1,3 @@
-Power-danger-structure framework instead of valence-arousal-dominance
-
 
 _Conceptual Strengths & Innovations_:
 
