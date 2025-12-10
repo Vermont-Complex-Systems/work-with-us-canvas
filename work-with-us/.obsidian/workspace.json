@@ -13,15 +13,15 @@
             "state": {
               "type": "canvas",
               "state": {
-                "file": "stack.canvas",
+                "file": "main.canvas",
                 "viewState": {
-                  "x": 0,
-                  "y": 171.30497054169763,
-                  "zoom": -1.0671332983649753
+                  "x": 2041.216777553257,
+                  "y": -605.7972688990332,
+                  "zoom": -1.1132386229217155
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "stack"
+              "title": "main"
             }
           }
         ]
@@ -171,19 +171,20 @@
   },
   "active": "4848e59ff2bf38df",
   "lastOpenFiles": [
+    "flowchart.canvas",
+    "main.canvas",
+    "data.canvas",
+    "stack.canvas",
     "openAPI.md",
     "fastAPI.md",
     "DuckLake.md",
     "duckDB.md",
     "postgreSQL.md",
     "Svelte.md",
-    "data.canvas",
-    "stack.canvas",
-    "main.canvas",
     "sveltekit.md",
     "storywrangler-ecosystems.canvas",
     "Storywrangler-ecosystems.pdf",
-    "team-data-annotations.md",
+    "Team data annotations.md",
     "swim-lanes-phase1.md",
     "working-with-APIs.md",
     "templates/project-motivations.md",
@@ -203,10 +204,8 @@
     "big-data.md",
     "What is good data?.md",
     "Submitting data pipelines.md",
-    "Data auditability.md",
     "assets",
     "assets/Pasted image 20251210081843.png",
-    "stack.canvas",
     "assets/Pasted image 20251210081539.png",
     "assets/Pasted image 20251209212754.png"
   ]
