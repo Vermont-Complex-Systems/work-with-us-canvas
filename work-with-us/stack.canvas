@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"bdddfb3b842da0fa","x":-380,"y":-342,"width":720,"height":952,"type":"group","label":"API"},
+		{"id":"273c55f0ce7b9950","x":620,"y":-182,"width":620,"height":742,"type":"group","label":"Sveltekit"},
+		{"id":"c866dbe94dfc959c","x":-1260,"y":-159,"width":581,"height":570,"type":"group","label":"Backend"},
+		{"id":"703b8019cf3b0265","x":-80,"y":190,"width":400,"height":400,"type":"file","file":"openAPI.md"},
+		{"id":"f9f683924043e582","x":-1240,"y":173,"width":263,"height":218,"type":"file","file":"duckDB.md"},
+		{"id":"3edd4f5ac368fa0d","x":-957,"y":61,"width":258,"height":153,"type":"file","file":"DuckLake.md"},
+		{"id":"0a316947d9f60d57","x":-1218,"y":-111,"width":220,"height":189,"type":"file","file":"postgreSQL.md"},
+		{"id":"73c7c9a6830dbec2","x":-360,"y":-262,"width":400,"height":400,"type":"file","file":"fastAPI.md"},
+		{"id":"78faf5d3964ac8ee","x":640,"y":-111,"width":280,"height":200,"type":"file","file":"Svelte.md"},
+		{"id":"ce4615e6f0e97826","x":780,"y":267,"width":428,"height":248,"type":"file","file":"sveltekit.md"}
+	],
+	"edges":[]
+}
