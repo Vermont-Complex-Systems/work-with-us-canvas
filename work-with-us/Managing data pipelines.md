@@ -1,1 +1,1 @@
-How can people share and work with each other data in a traceable and transparent way?
+How can people share and work with each other data in a traceable and transparent way, regardless of data size ?
