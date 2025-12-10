@@ -1,0 +1,1 @@
+Building common infrastructure such as self-hosting a data annotation platform can help your students collaborate and understand each other’s work. 

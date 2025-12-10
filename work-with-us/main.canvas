@@ -1,12 +1,17 @@
 {
 	"nodes":[
-		{"id":"297b98432ba6ca09","x":960,"y":-1320,"width":1920,"height":1499,"type":"group","label":"Products"},
-		{"id":"7d6a721cc93f7772","type":"file","file":"Communicating sensitive data.md","x":2241,"y":-1136,"width":565,"height":397},
-		{"id":"fa97856c427f6396","type":"file","file":"Participatory survey.md","x":1640,"y":-1263,"width":390,"height":254},
-		{"id":"8ebadcf8f07dd35e","type":"file","file":"Story-driven websites.md","x":1160,"y":-937,"width":400,"height":280},
-		{"id":"838641be422bf3bb","type":"file","file":"Interactive press releases.md","x":1040,"y":-480,"width":441,"height":336},
-		{"id":"be32340324d691bb","type":"file","file":"Team data annotations.md","x":2406,"y":-441,"width":400,"height":400},
-		{"id":"89871ee176fe7434","type":"file","file":"Managing data pipelines.md","x":1830,"y":-241,"width":400,"height":400}
+		{"id":"a78532b10fe43b77","x":700,"y":-1520,"width":781,"height":1660,"type":"group","label":"Interactive stories and visual essays"},
+		{"id":"37a6533c62b412e5","type":"group","x":1580,"y":-1146,"width":1040,"height":986,"label":"JSO's north star"},
+		{"id":"253d59a6bcd460c6","type":"file","file":"Making slow science faster.md","x":1600,"y":-1070,"width":1000,"height":240},
+		{"id":"838641be422bf3bb","type":"file","file":"Interactive press releases.md","x":1020,"y":-216,"width":441,"height":336},
+		{"id":"7fa4c3e41cfa7be3","x":720,"y":-600,"width":459,"height":296,"type":"file","file":"Evergreen dashboards.md"},
+		{"id":"8ebadcf8f07dd35e","type":"file","file":"Story-driven websites.md","x":979,"y":-1000,"width":400,"height":280},
+		{"id":"fa97856c427f6396","type":"file","file":"Participatory survey.md","x":802,"y":-1400,"width":437,"height":300},
+		{"id":"89871ee176fe7434","type":"file","file":"Managing data pipelines.md","x":2800,"y":-1120,"width":520,"height":400},
+		{"id":"e8a2649226e223f7","type":"file","file":"Progressive enhancement.md","x":1600,"y":-452,"width":1000,"height":264},
+		{"id":"1eb0644e1b95d62e","type":"file","file":"Working as teams.md","x":1600,"y":-760,"width":1000,"height":232},
+		{"id":"7d6a721cc93f7772","type":"file","file":"Working with sensitive data.md","x":1680,"y":-1640,"width":680,"height":360},
+		{"id":"be32340324d691bb","type":"file","file":"Team data annotations.md","x":1800,"y":-48,"width":720,"height":440}
 	],
 	"edges":[]
 }

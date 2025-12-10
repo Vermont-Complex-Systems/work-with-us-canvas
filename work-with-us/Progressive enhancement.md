@@ -1,0 +1,1 @@
+There is value in building interactive dataviz; we can reach broader audience, tell stories that go beyond academic circles.  But how do we do that in a way that is sustainable? We adopt [progressive enhancement](https://www.gov.uk/service-manual/technology/using-progressive-enhancement) as a philosophy, facilitated by our choice of tools.

@@ -210,13 +210,19 @@
 						data-node-type={node.type}
 						style="left: {node.x}px; top: {node.y}px; width: {node.width}px; height: {node.height}px;"
 					>
-						<div class="node-name">
-							{#if node.type === 'file'}
-								{node.file.replace(/\.md$/, '')}
-							{/if}
-						</div>
+						{#if node.type !== 'group'}
+							<div class="node-name">
+								{#if node.type === 'file'}
+									{node.file.replace(/\.md$/, '')}
+								{/if}
+							</div>
+						{/if}
 
-						{#if node.type === 'text'}
+						{#if node.type === 'group'}
+							<div class="group-label">
+								{node.label || ''}
+							</div>
+						{:else if node.type === 'text'}
 							<div class="node-text-content">
 								{@html node.text || ''}
 							</div>

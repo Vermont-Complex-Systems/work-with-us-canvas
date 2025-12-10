@@ -276,6 +276,26 @@ nav .link:hover {
   display: flex;
   flex-direction: column;
 }
+.node-group {
+  background-color: transparent;
+  border: 2px solid var(--color-ui-2);
+  border-radius: 8px;
+  box-shadow: none;
+}
+.group-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: calc(1.2em * 1/var(--scale));
+  font-weight: 600;
+  color: var(--color-ui-2);
+  padding: 4px 8px;
+  background-color: var(--color-bg-1);
+  border-radius: 4px;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 .node.is-active {
   box-shadow:
     0 0 0 2px var(--color-ui-3);

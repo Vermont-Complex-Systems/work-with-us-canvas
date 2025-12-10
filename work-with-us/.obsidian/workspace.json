@@ -15,9 +15,9 @@
               "state": {
                 "file": "main.canvas",
                 "viewState": {
-                  "x": 2041.216777553257,
-                  "y": -605.7972688990332,
-                  "zoom": -1.1132386229217155
+                  "x": 2128.3313561805976,
+                  "y": -580.5558275599259,
+                  "zoom": -1.3134231571859907
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -171,8 +171,13 @@
   },
   "active": "4848e59ff2bf38df",
   "lastOpenFiles": [
-    "flowchart.canvas",
+    "Evergreen dashboards.md",
+    "Progressive enhancement.md",
+    "Working as teams.md",
+    "Making slow science faster.md",
     "main.canvas",
+    "JSO north Star.md",
+    "flowchart.canvas",
     "data.canvas",
     "stack.canvas",
     "openAPI.md",
@@ -200,10 +205,6 @@
     "data-refresh-rate.md",
     "data-overview.md",
     "data-mutation.md",
-    "data-interoperability.md",
-    "big-data.md",
-    "What is good data?.md",
-    "Submitting data pipelines.md",
     "assets",
     "assets/Pasted image 20251210081843.png",
     "assets/Pasted image 20251210081539.png",
