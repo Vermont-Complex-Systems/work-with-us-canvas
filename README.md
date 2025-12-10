@@ -1,46 +1,11 @@
-# JSON Canvas Kit
+# Work-with-us
 
-A SvelteKit template for hosting interactive [JSON Canvas](https://jsoncanvas.org/) files on GitHub Pages. Edit your canvas and markdown files in Obsidian, commit your changes, and have them automatically deployed to a beautiful, interactive web viewer.
+This is a canvas of our offerings at the VCSI. We are specializing with working with small and big datasets, but favor best collaborative practices. 
 
-## Features
-
-- 📝 **Obsidian Integration** - Edit canvas and markdown files directly in Obsidian
-- 🎨 **Interactive Viewer** - Pan, zoom, and drag nodes on the canvas
-- 🔗 **Markdown Support** - Render markdown files with full GFM support
-- 🚀 **Auto-Deploy** - GitHub Actions automatically deploys to GitHub Pages on push
-- 📱 **Responsive** - Works on desktop and mobile devices
-- ⚡ **Fast** - Static site generation with SvelteKit
-
-## Getting Started
-
-### 1. Create Your Repository
-
-Click the **"Use this template"** button at the top of this repository to create your own copy. If you want to stay updated with the repo, you'll need to fork it.
-
-### 2. Clone and Install
-
-```bash
-# Clone your new repository
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
-
-# Install dependencies
-npm install
-```
-
-### 3. Open in Obsidian
-
-1. Open Obsidian
-2. Click **"Open folder as vault"**
-3. Navigate to and select the `static/` folder in your repository
-4. Start creating your canvas!
-
-### 4. Github - deployment
-
-1. Click on `Settings/Pages`
-2. Make sure it is using Github action for deployment.
-
-## FAQ
-
-- Q:Why is my markdown not working?
-- A: Only _converted files_ in vault are currently rendered as markdown.
+1. [Interactive data visualizations of sensitive data](/static/dataviz-sensitive-data.md)
+2. [Interactive press release](/static/interactive-press-release.md)
+3. [Managing data pipelines](/static/managing-data-pipelines.md)
+4. [Epic websites](/static/epic-websites.md)
+5. [Team data annotations](/static/team-data-annotations.md)
+6. [Participatory surveys](/static/participatory-data-survey.md)
+7. [Complex Systems Theory](/static/complex-systems.md)

@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "81ae340c8f8fa970",
+    "id": "b7da8a24e35722fb",
     "type": "split",
     "children": [
       {
-        "id": "f58661f4215d5ed9",
+        "id": "c8de769ae7137d76",
         "type": "tabs",
         "children": [
           {
-            "id": "d2651b5f5e585be0",
+            "id": "4848e59ff2bf38df",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b1ff712765918888",
+    "id": "dafc0cf374191c8e",
     "type": "split",
     "children": [
       {
-        "id": "24c4a9f11e013449",
+        "id": "97608547ad5cfdd2",
         "type": "tabs",
         "children": [
           {
-            "id": "6eade1eff7fa8066",
+            "id": "ac8991a7a5714860",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "bd33334be1675f3c",
+            "id": "7f73d7ec7de5cba9",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "a7365ab63d824dc6",
+            "id": "4af61dd858b9cd9c",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -77,20 +77,19 @@
     "width": 300
   },
   "right": {
-    "id": "ee486154ca9ef613",
+    "id": "d9339bc59632ba09",
     "type": "split",
     "children": [
       {
-        "id": "3c2856c947c83e03",
+        "id": "8a35fee04e59e62e",
         "type": "tabs",
         "children": [
           {
-            "id": "163480c900376156",
+            "id": "a0bef5b0f725bf90",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "main.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for main"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "6cbb346ce731016a",
+            "id": "82f8e8d8c49d91db",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "main.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from main"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "69da460d1245a649",
+            "id": "9af03e060b55db7e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,18 +131,17 @@
             }
           },
           {
-            "id": "6626ae123f308eb2",
+            "id": "568b7a85342134e7",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "main.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of main"
+              "title": "Outline"
             }
           }
         ]
@@ -165,41 +162,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "6eade1eff7fa8066",
+  "active": "ac8991a7a5714860",
   "lastOpenFiles": [
-    "geewax_api_2021.md",
-    "storywrangler-ecosystems.canvas",
-    "What is good data?.md",
     "working-with-APIs.md",
-    "swim-lanes-phase1.md",
-    "data-overview.md",
-    "data.canvas",
-    "Untitled.md",
-    "Storywrangler-ecosystems.pdf",
     "templates/project-motivations.md",
     "templates",
-    "advanced.md",
-    "storywrangler-tools",
-    "storywrangler-tools/Ousiometer.md",
-    "storywrangler-tools/Archetypometrics.md",
     "storywrangler-tools/Panometer.md",
-    "storywrangler-tools/Allotaxonometer.md",
+    "storywrangler-tools/Ousiometer.md",
     "storywrangler-tools/Hedonometer.md",
-    "Submitting data pipelines.md",
-    "getting-started.md",
-    "Data auditability.md",
-    "data quality.md",
-    "2025-11-12.md",
-    "main.canvas",
-    "welcome.md",
-    "open-data 1.md",
-    "data-shareability.md",
-    "data-interoperability.md",
-    "data-mutation.md",
-    "data-refresh-rate.md",
-    "big-data.md",
-    "second.canvas",
+    "storywrangler-tools/Archetypometrics.md",
+    "storywrangler-tools/Allotaxonometer.md",
+    "storywrangler-tools",
+    "storywrangler-ecosystems.canvas",
     "open-data.md",
-    "canvas.js.tmp.34235.1762896218093"
+    "data.canvas",
+    "data-shareability.md",
+    "data-refresh-rate.md",
+    "data-overview.md",
+    "data-mutation.md",
+    "data-interoperability.md",
+    "big-data.md",
+    "What is good data?.md",
+    "Submitting data pipelines.md",
+    "Data auditability.md",
+    "assets",
+    "assets/Pasted image 20251210081843.png",
+    "stack.canvas",
+    "assets/Pasted image 20251210081539.png",
+    "assets/Pasted image 20251209212754.png",
+    "main.canvas",
+    "sveltekit.md",
+    "svelte.md",
+    "openAPI.md",
+    "fastAPI.md",
+    "duckLake.md",
+    "duckDB.md",
+    "postgreSQL.md",
+    "Untitled.md",
+    "welcome.md"
   ]
 }
