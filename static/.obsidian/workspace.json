@@ -11,17 +11,10 @@
             "id": "4848e59ff2bf38df",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "data.canvas",
-                "viewState": {
-                  "x": 221.08321537406417,
-                  "y": 30.13613759969689,
-                  "zoom": -0.8753071812788646
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "data"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -171,8 +164,22 @@
   },
   "active": "ac8991a7a5714860",
   "lastOpenFiles": [
+    "assets",
+    "assets/Pasted image 20251210081843.png",
+    "stack.canvas",
+    "assets/Pasted image 20251210081539.png",
+    "assets/Pasted image 20251209212754.png",
     "data.canvas",
     "main.canvas",
+    "sveltekit.md",
+    "svelte.md",
+    "openAPI.md",
+    "fastAPI.md",
+    "duckLake.md",
+    "duckDB.md",
+    "postgreSQL.md",
+    "Untitled.md",
+    "welcome.md",
     "data.md",
     "complex-systems.md",
     "participatory-surveys.md",
