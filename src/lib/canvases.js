@@ -3,5 +3,5 @@
 export const canvases = [
 	{ name: 'main', title: '1', file: 'main.canvas' },
 	{ name: 'data', title: '2', file: 'data.canvas' },
-	{ name: 'storywrangler-ecosystems', title: '3', file: 'storywrangler-ecosystems.canvas' }
+	{ name: 'stack', title: '3', file: 'stack.canvas' }
 ];

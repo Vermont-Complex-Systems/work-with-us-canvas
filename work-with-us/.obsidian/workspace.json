@@ -4,73 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "695d28d196b5fccc",
+        "id": "f58661f4215d5ed9",
         "type": "tabs",
         "children": [
           {
-            "id": "0f6e29742202f5b9",
+            "id": "d2651b5f5e585be0",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "data.canvas",
-                "viewState": {
-                  "x": -690,
-                  "y": -58.52045266209865,
-                  "zoom": -0.8206659816027636
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "data"
-            }
-          },
-          {
-            "id": "e8b6311b63eed412",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "storywrangler-ecosystems.canvas",
-                "viewState": {
-                  "x": 178.11281094589734,
-                  "y": -179.5061952936138,
-                  "zoom": -0.4952718098958333
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "storywrangler-ecosystems"
-            }
-          },
-          {
-            "id": "d2c1e6d35b42cbf8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "What is good data?.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "What is good data?"
-            }
-          },
-          {
-            "id": "539a3db1ffa2c562",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "working-with-APIs.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "working-with-APIs"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -127,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ee486154ca9ef613",
@@ -219,10 +165,18 @@
       "bases:Create new base": false
     }
   },
-  "active": "e8b6311b63eed412",
+  "active": "6eade1eff7fa8066",
   "lastOpenFiles": [
-    "templates/project-motivations.md",
+    "geewax_api_2021.md",
     "storywrangler-ecosystems.canvas",
+    "What is good data?.md",
+    "working-with-APIs.md",
+    "swim-lanes-phase1.md",
+    "data-overview.md",
+    "data.canvas",
+    "Untitled.md",
+    "Storywrangler-ecosystems.pdf",
+    "templates/project-motivations.md",
     "templates",
     "advanced.md",
     "storywrangler-tools",
@@ -233,9 +187,6 @@
     "storywrangler-tools/Hedonometer.md",
     "Submitting data pipelines.md",
     "getting-started.md",
-    "data.canvas",
-    "working-with-APIs.md",
-    "What is good data?.md",
     "Data auditability.md",
     "data quality.md",
     "2025-11-12.md",
@@ -247,11 +198,8 @@
     "data-mutation.md",
     "data-refresh-rate.md",
     "big-data.md",
-    "data-overview.md",
     "second.canvas",
     "open-data.md",
-    "team-data-annotations.md",
-    "survey-data.md",
     "canvas.js.tmp.34235.1762896218093"
   ]
 }

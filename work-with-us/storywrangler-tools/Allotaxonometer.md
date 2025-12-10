@@ -6,3 +6,6 @@ _Computational Strengths & Innovations:_ The strength of the allotaxonometer too
 
 _Algorithm Citation: _
 
+St-Onge J, Fehr AMA, Ward C, Beauregard CG, Arnold MV, Rosenblatt SF, Cooley B, Danforth CM, Dodds PS. A suite of allotaxonometric tools for the comparison of complex systems using rank-turbulence divergence. arXiv [cs.CL]. 2025 Jun; arXiv:2506.21808. Available from: https://arxiv.org/abs/2506.21808
+
+

@@ -10,6 +10,10 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
+		files: {
+                // Change 'static' to your new folder name, e.g., 'public'
+                assets: 'work-with-us' 
+            },
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		}
